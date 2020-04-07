@@ -15,9 +15,6 @@ class raindrop{
 
         for(var i = 0; i < this.pos.length; i++){
             var pos = this.pos[i];
-            if(pos[1] > 410){
-                this.pos.splice(i,1);
-            }
             fill(random(0,255),random(0,255),random(0,255));
             text(Math.round(random(0,9)),pos[0],pos[1]);
         }
